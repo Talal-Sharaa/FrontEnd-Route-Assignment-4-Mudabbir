@@ -268,3 +268,11 @@ td { padding: 12px 10px; font-size: 11px; border-top: 1px solid #f0f2f6; }
   .account-list li { gap: 8px; }
   .account-amount { font-size: 10px; }
 }
+
+:focus-visible { outline: 3px solid #4b83f1; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media (max-width: 380px) {
+  .nav-link { font-size: 10px; gap: 6px; }
+  .summary-amount { font-size: 18px; }
+  .budget-totals strong { font-size: 17px; }
+}
