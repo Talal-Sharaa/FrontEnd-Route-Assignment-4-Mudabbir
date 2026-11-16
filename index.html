@@ -196,19 +196,58 @@
 <section class="panel payment-panel" id="payments" aria-labelledby="payments-title">
   <div class="section-heading"><h2 id="payments-title">وسائل الدفع</h2><a href="#payments">إدارة <span aria-hidden="true">‹</span></a></div>
   <div class="payment-cards">
-    <article class="bank-card primary-card" aria-label="بطاقة Visa تنتهي بالأرقام 4532">
-      <div class="card-top"><span class="card-tag">أساسية</span><img src="assets/icons/cc-visa-brands-solid-full.png" alt="Visa" /></div>
-      <p class="card-number" dir="ltr">•••• •••• •••• 4532</p>
-      <div class="card-bottom"><div><small>حامل البطاقة</small><strong>سيف أسامة</strong></div><div><small>تنتهي</small><strong><bdi>12/26</bdi></strong></div></div>
+    <article class="payment-card">
+      <input class="flip-toggle" type="checkbox" id="flip-visa" aria-label="اقلب بطاقة Visa المنتهية بـ 4532">
+      <label class="flip-card" for="flip-visa">
+        <span class="flip-card-inner">
+          <span class="bank-card card-face primary-card">
+            <span class="card-top"><span class="card-tag">أساسية</span><img src="assets/icons/cc-visa-brands-solid-full.png" alt="Visa" /></span>
+            <span class="card-number" dir="ltr">•••• •••• •••• 4532</span>
+            <span class="card-bottom"><span><small>حامل البطاقة</small><strong>سيف أسامة</strong></span><span><small>تنتهي</small><strong><bdi>12/26</bdi></strong></span></span>
+          </span>
+          <span class="bank-card card-face card-back">
+            <span class="magnetic-strip" aria-hidden="true"></span>
+            <span class="signature-caption">توقيع معتمد - غير صالحة بدون توقيع</span>
+            <span class="signature-line" dir="ltr">4532</span>
+            <span class="security-code"><small>CVV</small><strong>123</strong></span>
+          </span>
+        </span>
+      </label>
     </article>
-    <article class="bank-card secondary-card" aria-label="بطاقة Mastercard تنتهي بالأرقام 8901">
-      <div class="card-top"><span class="card-tag">حساب التوفير</span><img src="assets/icons/cc-mastercard-brands-solid-full.png" alt="Mastercard" /></div>
-      <p class="card-number" dir="ltr">•••• •••• •••• 8901</p>
-      <div class="card-bottom"><div><small>حامل البطاقة</small><strong>سيف أسامة</strong></div><div><small>تنتهي</small><strong><bdi>08/27</bdi></strong></div></div>
+    <article class="payment-card">
+      <input class="flip-toggle" type="checkbox" id="flip-mastercard" aria-label="اقلب بطاقة Mastercard المنتهية بـ 8901">
+      <label class="flip-card" for="flip-mastercard">
+        <span class="flip-card-inner">
+          <span class="bank-card card-face secondary-card">
+            <span class="card-top"><span class="card-tag">حساب التوفير</span><img src="assets/icons/cc-mastercard-brands-solid-full.png" alt="Mastercard" /></span>
+            <span class="card-number" dir="ltr">•••• •••• •••• 8901</span>
+            <span class="card-bottom"><span><small>حامل البطاقة</small><strong>سيف أسامة</strong></span><span><small>تنتهي</small><strong><bdi>08/27</bdi></strong></span></span>
+          </span>
+          <span class="bank-card card-face card-back">
+            <span class="magnetic-strip" aria-hidden="true"></span>
+            <span class="signature-caption">توقيع معتمد - غير صالحة بدون توقيع</span>
+            <span class="signature-line" dir="ltr">8901</span>
+            <span class="security-code"><small>CVV</small><strong>456</strong></span>
+          </span>
+        </span>
+      </label>
     </article>
-    <article class="bank-card paypal-card" aria-label="حساب PayPal موثق">
-      <div class="card-top"><span class="card-tag">حساب Paypal</span><img src="assets/icons/paypal-brands-solid-full.png" alt="PayPal" /></div>
-      <div class="paypal-details"><div><small>الإيميل</small><strong dir="ltr">seif@example.com</strong></div><div><small>الحالة</small><strong>موثق</strong></div></div>
+    <article class="payment-card">
+      <input class="flip-toggle" type="checkbox" id="flip-paypal" aria-label="اقلب بطاقة حساب PayPal">
+      <label class="flip-card" for="flip-paypal">
+        <span class="flip-card-inner">
+          <span class="bank-card card-face paypal-card">
+            <span class="card-top"><span class="card-tag">حساب Paypal</span><img src="assets/icons/paypal-brands-solid-full.png" alt="PayPal" /></span>
+            <span class="paypal-details"><span><small>الإيميل</small><strong dir="ltr">seif@example.com</strong></span><span><small>الحالة</small><strong>موثق</strong></span></span>
+          </span>
+          <span class="bank-card card-face card-back">
+            <span class="magnetic-strip" aria-hidden="true"></span>
+            <span class="signature-caption">توقيع معتمد - غير صالحة بدون توقيع</span>
+            <span class="signature-line" dir="ltr">PP01</span>
+            <span class="security-code"><small>ID</small><strong>PP-01</strong></span>
+          </span>
+        </span>
+      </label>
     </article>
   </div>
 </section>
