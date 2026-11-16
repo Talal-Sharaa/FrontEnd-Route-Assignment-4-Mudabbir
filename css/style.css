@@ -191,7 +191,7 @@ td { padding: 12px 10px; font-size: 11px; border-top: 1px solid #f0f2f6; }
 .bills-panel, .budget-panel { grid-row: 2; }
 .payment-panel { grid-row: 3 / span 2; }
 .chart-panel { grid-row: 3; }
-.accounts-panel { grid-row: 4; }
+.accounts-panel { grid-column: 2; grid-row: 4; }
 
 @media (max-width: 1250px) {
   .dashboard { grid-template-columns: 215px minmax(0, 1fr); }
