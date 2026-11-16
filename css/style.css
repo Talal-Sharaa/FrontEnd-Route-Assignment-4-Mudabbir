@@ -169,3 +169,14 @@ td { padding: 12px 10px; font-size: 11px; border-top: 1px solid #f0f2f6; }
 .card-bottom small, .paypal-details small { opacity: .72; font-size: 9px; margin-bottom: 4px; }
 .card-bottom strong, .paypal-details strong { font-size: 12px; }
 .paypal-details { display: flex; flex-direction: column; gap: 12px; margin-top: auto; }
+
+.account-list li { display: flex; align-items: center; gap: 12px; padding: 15px 0; border-bottom: 1px solid #f0f2f6; }
+.account-list li:last-child { border-bottom: 0; }
+.account-icon { display: grid; place-items: center; width: 42px; height: 42px; flex: 0 0 42px; border-radius: 11px; }
+.account-icon img { height: 20px; width: 20px; object-fit: contain; }
+.account-list li > div { flex: 1; min-width: 0; }
+.account-list strong, .account-list small { display: block; }
+.account-list strong { font-size: 12px; }
+.account-list small { margin-top: 5px; font-size: 10px; color: #929db0; }
+.account-amount { font-size: 12px; font-weight: 700; white-space: nowrap; }
+.account-amount.debt { color: #d43d4c; }
