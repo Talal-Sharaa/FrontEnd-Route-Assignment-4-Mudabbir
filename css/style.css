@@ -33,3 +33,12 @@ h1, h2, h3, p { margin-top: 0; }
 .nav-link img { width: 18px; height: 18px; object-fit: contain; opacity: .86; }
 .nav-link.active { background: #eaf1ff; color: #2460e8; }
 .nav-link:hover { background: #f2f5fc; }
+
+.quick-actions { margin-top: 35px; border-top: 1px solid #eef1f6; padding-top: 25px; }
+.quick-actions h2 { font-size: 13px; padding-inline: 12px; margin-bottom: 15px; }
+.quick-action-list { display: grid; gap: 6px; }
+.action-link { display: flex; align-items: center; gap: 12px; padding: 8px 12px; font-size: 12px; font-weight: 600; color: #556178; border-radius: 9px; }
+.action-link:hover { background: #f6f8fc; }
+.action-icon { display: grid; place-items: center; flex: 0 0 35px; width: 35px; height: 35px; border-radius: 10px; }
+.action-icon img { width: 17px; height: 17px; object-fit: contain; }
+.blue { background: #eaf1ff; } .green { background: #e6f8ee; } .violet { background: #f3e8ff; } .amber { background: #fff3df; }
