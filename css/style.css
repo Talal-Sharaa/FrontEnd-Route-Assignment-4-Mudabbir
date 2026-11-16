@@ -180,3 +180,15 @@ td { padding: 12px 10px; font-size: 11px; border-top: 1px solid #f0f2f6; }
 .account-list small { margin-top: 5px; font-size: 10px; color: #929db0; }
 .account-amount { font-size: 12px; font-weight: 700; white-space: nowrap; }
 .account-amount.debt { color: #d43d4c; }
+
+.dashboard { display: grid; grid-template-columns: 250px minmax(0, 1fr); }
+.sidebar { position: sticky; top: 0; align-self: start; height: 100vh; overflow-y: auto; }
+.page-content { max-width: 1620px; width: 100%; margin-inline: auto; }
+.content-sections { grid-template-columns: minmax(265px, 1fr) minmax(0, 2.08fr); align-items: start; }
+.activities-panel, .bills-panel, .payment-panel, .accounts-panel { grid-column: 1; }
+.transactions-panel, .budget-panel, .chart-panel { grid-column: 2; }
+.activities-panel, .transactions-panel { grid-row: 1; }
+.bills-panel, .budget-panel { grid-row: 2; }
+.payment-panel { grid-row: 3 / span 2; }
+.chart-panel { grid-row: 3; }
+.accounts-panel { grid-row: 4; }
