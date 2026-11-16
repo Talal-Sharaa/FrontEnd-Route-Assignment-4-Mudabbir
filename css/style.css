@@ -42,3 +42,19 @@ h1, h2, h3, p { margin-top: 0; }
 .action-icon { display: grid; place-items: center; flex: 0 0 35px; width: 35px; height: 35px; border-radius: 10px; }
 .action-icon img { width: 17px; height: 17px; object-fit: contain; }
 .blue { background: #eaf1ff; } .green { background: #e6f8ee; } .violet { background: #f3e8ff; } .amber { background: #fff3df; }
+
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 25px; background: #fff; border: 1px solid #e9edf3; border-radius: 16px; padding: 16px 22px; margin-bottom: 20px; }
+.page-heading h1 { margin: 0 0 2px; font-size: 24px; line-height: 1.35; }
+.page-heading p { margin: 0; color: #8b95a5; font-size: 12px; }
+.header-actions { display: flex; align-items: center; gap: 10px; }
+.header-icon { position: relative; width: 43px; height: 43px; display: grid; place-items: center; border-radius: 12px; border: 1px solid #edf0f5; background: #fff; }
+.header-icon img { width: 19px; height: 19px; object-fit: contain; }
+.notification-count { position: absolute; top: -6px; right: -5px; border-radius: 50%; width: 18px; height: 18px; line-height: 18px; font-size: 10px; text-align: center; color: #fff; background: #f33b4b; }
+.profile { border: 1px solid #e6eaf2; border-radius: 13px; display: flex; align-items: center; gap: 9px; padding: 7px 11px; min-height: 48px; }
+.profile-photo { width: 36px; height: 36px; object-fit: cover; border-radius: 10px; }
+.profile strong, .profile span:not(.online-dot) { display: block; }
+.profile strong { font-size: 12px; white-space: nowrap; }
+.profile div > span { font-size: 10px; color: #a0a8b6; }
+.profile .online-indicator { font-size: 10px; color: #078b56; white-space: nowrap; margin-inline-start: 5px; }
+.online-dot { display: inline-block; width: 7px; height: 7px; background: #04a86d; border-radius: 50%; margin-inline-end: 3px; }
+.mobile-brand { display: none; }
