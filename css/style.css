@@ -20,3 +20,16 @@ h1, h2, h3, p { margin-top: 0; }
 .section-heading h2 { font-size: 19px; line-height: 1.6; margin: 0; font-weight: 700; }
 .section-heading a { color: #627086; font-size: 12px; white-space: nowrap; }
 .section-heading a span { font-size: 20px; vertical-align: -1px; margin-inline-start: 4px; }
+
+.sidebar { padding: 28px 18px; background: #fff; border-inline-end: 1px solid #e9edf3; }
+.brand { display: flex; align-items: center; gap: 12px; padding: 0 12px 28px; }
+.brand-mark { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: #eaf0ff; }
+.brand-mark img { width: 25px; height: 25px; object-fit: contain; }
+.brand strong, .brand small { display: block; }
+.brand strong { font-size: 23px; line-height: 1.5; }
+.brand small { font-size: 11px; color: #7a8598; }
+.primary-nav { display: grid; gap: 5px; }
+.nav-link { display: flex; align-items: center; gap: 13px; min-height: 48px; padding: 11px 14px; border-radius: 11px; font-size: 13px; font-weight: 700; color: #647087; }
+.nav-link img { width: 18px; height: 18px; object-fit: contain; opacity: .86; }
+.nav-link.active { background: #eaf1ff; color: #2460e8; }
+.nav-link:hover { background: #f2f5fc; }
