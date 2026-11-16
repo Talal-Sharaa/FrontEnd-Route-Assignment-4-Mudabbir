@@ -127,3 +127,17 @@ td { padding: 12px 10px; font-size: 11px; border-top: 1px solid #f0f2f6; }
 .progress-fill { display: block; height: 100%; border-radius: inherit; }
 .progress-fill.overall { background: #2d6ceb; }
 .overall-budget { margin-bottom: 22px; }
+
+.budget-categories { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 16px; }
+.budget-category { border: 1px solid #eef1f5; padding: 12px; border-radius: 12px; }
+.category-heading { display: flex; align-items: center; gap: 9px; margin-bottom: 12px; }
+.budget-icon { display: grid; place-items: center; width: 34px; height: 34px; flex: 0 0 34px; border-radius: 9px; }
+.budget-icon img { width: 17px; height: 17px; object-fit: contain; }
+.budget-icon.orange { background: #fff0dd; } .budget-icon.pink { background: #fff0f8; } .budget-icon.teal { background: #e7f9f1; }
+.category-heading > div { min-width: 0; flex: 1; }
+.category-heading h3 { margin: 0; font-size: 11px; }
+.category-heading small { font-size: 9px; white-space: nowrap; color: #95a0b0; }
+.budget-used { font-size: 10px; white-space: nowrap; font-weight: 700; }
+.budget-category .progress-track { height: 7px; }
+.violet-fill { background: #a048db; } .orange-fill { background: #fb992b; } .pink-fill { background: #ec4899; } .teal-fill { background: #0caf76; }
+.budget-category p { margin: 7px 0 0; text-align: left; font-size: 9px; color: #8894a5; }
