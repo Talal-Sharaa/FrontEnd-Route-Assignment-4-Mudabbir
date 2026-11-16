@@ -79,3 +79,24 @@ h1, h2, h3, p { margin-top: 0; }
 .activity-content time { font-size: 10px; color: #a3aaba; }
 .all-activities { display: block; text-align: center; margin-top: 18px; border: 1px solid #e9edf4; border-radius: 9px; padding: 10px 8px; font-size: 11px; font-weight: 700; color: #647188; }
 .all-activities span { padding-inline-start: 5px; }
+
+.table-scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; white-space: nowrap; text-align: right; }
+th { font-size: 11px; color: #8994a5; font-weight: 600; padding: 9px 10px 15px; }
+td { padding: 12px 10px; font-size: 11px; border-top: 1px solid #f0f2f6; }
+.transaction-name { display: flex; align-items: center; gap: 9px; min-width: 150px; }
+.transaction-name img { width: 35px; height: 35px; object-fit: cover; border-radius: 50%; }
+.transaction-name img.transaction-icon { padding: 8px; border-radius: 9px; background: #f3f6fc; object-fit: contain; }
+.transaction-name strong, .transaction-name small { display: block; }
+.transaction-name strong { font-size: 11px; font-weight: 700; }
+.transaction-name small { font-size: 10px; color: #9aa5b3; padding-top: 3px; }
+.category, .status { display: inline-block; border-radius: 7px; padding: 5px 9px; font-weight: 600; font-size: 10px; }
+.category.income, .status.complete { color: #1a9e61; background: #e7faee; }
+.category.food { color: #bd6f1b; background: #fff0e0; }
+.category.shopping, .category.split, .category.education { color: #436bd3; background: #ebf0ff; }
+.category.transport, .category.entertainment { color: #994db9; background: #f7eafa; }
+.category.work, .category.health { color: #228779; background: #e7f6f3; }
+.status.pending { color: #b67a18; background: #fff5e1; }
+.date-cell { font-size: 10px; color: #768195; }
+.money { font-size: 11px; font-weight: 700; }
+.money.positive { color: #14a75e; } .money.negative { color: #222c3d; }
