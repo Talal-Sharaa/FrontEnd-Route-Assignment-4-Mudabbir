@@ -192,3 +192,28 @@ td { padding: 12px 10px; font-size: 11px; border-top: 1px solid #f0f2f6; }
 .payment-panel { grid-row: 3 / span 2; }
 .chart-panel { grid-row: 3; }
 .accounts-panel { grid-row: 4; }
+
+@media (max-width: 1250px) {
+  .dashboard { grid-template-columns: 215px minmax(0, 1fr); }
+  .page-content { padding: 18px; }
+  .sidebar { padding: 24px 12px; }
+  .content-sections { grid-template-columns: minmax(240px, 1fr) minmax(0, 1.7fr); gap: 16px; }
+  .panel { padding: 18px; }
+  .summary-grid { gap: 14px; }
+  .summary-card { padding: 18px; min-height: 145px; }
+  .budget-categories { grid-template-columns: 1fr; }
+}
+@media (max-width: 1020px) {
+  .dashboard { grid-template-columns: 190px minmax(0, 1fr); }
+  .nav-link { padding: 10px; font-size: 11px; }
+  .brand { padding-inline: 4px; }
+  .brand strong { font-size: 20px; }
+  .content-sections { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .activities-panel, .bills-panel, .transactions-panel, .budget-panel, .chart-panel, .payment-panel, .accounts-panel { grid-row: auto; }
+  .transactions-panel, .budget-panel, .chart-panel { grid-column: 1 / -1; }
+  .activities-panel { grid-column: 1; }
+  .bills-panel { grid-column: 2; }
+  .payment-panel { grid-column: 1; }
+  .accounts-panel { grid-column: 2; }
+  .budget-categories { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
