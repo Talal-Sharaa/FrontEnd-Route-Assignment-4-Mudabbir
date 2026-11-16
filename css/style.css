@@ -276,3 +276,8 @@ td { padding: 12px 10px; font-size: 11px; border-top: 1px solid #f0f2f6; }
   .summary-amount { font-size: 18px; }
   .budget-totals strong { font-size: 17px; }
 }
+
+.panel, .summary-card, .topbar { box-shadow: 0 3px 14px rgba(32, 48, 81, .025); }
+.header-icon:hover, .all-activities:hover { background: #f6f8fd; }
+.section-heading a:hover { color: #2460e8; }
+.bank-card { box-shadow: 0 8px 18px rgba(25, 53, 113, .1); }
