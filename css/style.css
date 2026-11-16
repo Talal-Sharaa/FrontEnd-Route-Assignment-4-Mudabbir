@@ -217,3 +217,54 @@ td { padding: 12px 10px; font-size: 11px; border-top: 1px solid #f0f2f6; }
   .accounts-panel { grid-column: 2; }
   .budget-categories { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+@media (max-width: 760px) {
+  .dashboard { display: block; }
+  .sidebar { position: static; height: auto; overflow: visible; border-inline-end: 0; border-bottom: 1px solid #e9edf3; padding: 12px 16px; }
+  .sidebar .brand, .quick-actions { display: none; }
+  .primary-nav { display: flex; overflow-x: auto; gap: 5px; padding-bottom: 3px; }
+  .nav-link { flex: 0 0 auto; min-height: 40px; padding: 8px 12px; }
+  .nav-link img { width: 16px; height: 16px; }
+  .page-content { padding: 14px; }
+  .topbar { padding: 12px 14px; }
+  .page-heading h1, .page-heading p { display: none; }
+  .mobile-brand { display: flex; align-items: center; gap: 9px; font-size: 19px; font-weight: 800; }
+  .mobile-brand img { width: 22px; height: 22px; }
+  .profile .online-indicator { display: none; }
+  .summary-grid { gap: 10px; }
+  .summary-card { padding: 15px; min-height: 128px; }
+  .summary-label { font-size: 11px; }
+  .summary-amount { font-size: 22px; }
+  .content-sections { gap: 14px; }
+}
+@media (max-width: 560px) {
+  .topbar { gap: 9px; }
+  .header-actions { gap: 6px; }
+  .header-icon { width: 35px; height: 35px; }
+  .header-icon img { width: 17px; height: 17px; }
+  .profile { padding: 5px; min-height: 40px; }
+  .profile-photo { width: 31px; height: 31px; }
+  .profile > div { display: none; }
+  .summary-grid { grid-template-columns: 1fr 1fr; }
+  .summary-card { min-height: 116px; }
+  .summary-card:first-child { grid-column: 1 / -1; }
+  .summary-card:first-child .summary-amount { font-size: 30px; }
+  .summary-amount { font-size: 20px; }
+  .content-sections { display: flex; flex-direction: column; }
+  .content-sections > .panel { width: 100%; }
+  .activities-panel { order: 1; }
+  .transactions-panel { order: 2; }
+  .bills-panel { order: 3; }
+  .budget-panel { order: 4; }
+  .chart-panel { order: 5; }
+  .payment-panel { order: 6; }
+  .accounts-panel { order: 7; }
+  .panel { padding: 16px; }
+  .budget-categories { grid-template-columns: 1fr; }
+  .bar-chart { gap: 4px; padding-inline: 0; }
+  .chart-week { font-size: 9px; }
+  .bar-pair { gap: 5px; }
+  .bank-card { min-height: 175px; }
+  .account-list li { gap: 8px; }
+  .account-amount { font-size: 10px; }
+}
