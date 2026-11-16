@@ -58,3 +58,12 @@ h1, h2, h3, p { margin-top: 0; }
 .profile .online-indicator { font-size: 10px; color: #078b56; white-space: nowrap; margin-inline-start: 5px; }
 .online-dot { display: inline-block; width: 7px; height: 7px; background: #04a86d; border-radius: 50%; margin-inline-end: 3px; }
 .mobile-brand { display: none; }
+
+.summary-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-bottom: 20px; }
+.summary-card { padding: 22px 24px; background: #fff; border: 1px solid #e9edf3; border-radius: 16px; min-height: 164px; }
+.summary-label { font-size: 13px; color: #7b8597; margin-bottom: 8px; }
+.summary-amount { font-size: clamp(22px, 2.1vw, 31px); font-weight: 800; margin: 0 0 12px; letter-spacing: -.35px; }
+.summary-amount span { font-size: .57em; font-weight: 700; }
+.change { display: inline-flex; align-items: center; gap: 5px; font-family: Arial, sans-serif; font-size: 12px; font-weight: 700; }
+.change img { height: 13px; width: 13px; object-fit: contain; }
+.change.positive { color: #10a65a; } .change.negative { color: #e53140; }
